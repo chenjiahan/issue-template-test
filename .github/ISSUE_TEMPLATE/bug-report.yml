@@ -24,7 +24,33 @@ body:
     id: version
     attributes:
       label: vant 版本
-      description: 你正在使用的 vant 版本是多少？
-      placeholder: 请填写 node_modules/vant/package.json 里实际安装的版本
+      description: 你正在使用的 vant 版本是多少？（请填写 node_modules/vant/package.json 里实际安装的版本）
+      placeholder: 比如 3.2.0
     validations:
       required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 请描述一下你遇到的问题。
+      placeholder: 比如：弹窗无法展示、日历组件报错
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce-steps
+    attributes:
+      label: 重现步骤
+      description: 请提供一个最简单的操作步骤，方便我们快速重现问题。
+      placeholder: |
+        比如：
+        1. 点击按钮
+        2. 弹窗无法展示
+    validations:
+      required: true
+
+  - type: input
+    id: browsers
+    attributes:
+      label: 设备/浏览器
+      description: 在哪些设备/浏览器上能重现这个问题？
