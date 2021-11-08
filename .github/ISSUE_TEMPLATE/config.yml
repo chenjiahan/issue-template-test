@@ -1,5 +1,1 @@
 blank_issues_enabled: true
-contact_links:
-  - name: Create new issue
-    url: https://youzan.github.io/vant-issue-generater/dist/#/en-US
-    about: Please use the link to create a new issue, the non-standard issue will be closed.
