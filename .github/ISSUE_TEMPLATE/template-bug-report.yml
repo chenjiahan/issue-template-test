@@ -1,6 +1,6 @@
-name: 我遇到了一个 Bug
-description:
-title: "[Bug] "
+name: 我要反馈一个 Bug
+description: 通过标准模板进行 Bug 反馈。
+title: "[Bug Report] "
 labels: ["bug"]
 body:
   - type: markdown
@@ -9,14 +9,14 @@ body:
         在提交 Bug 报告前，请注意：
 
         - 确认你的问题无法通过官方文档得到解决。
-        - 确认你搜索过历史 [issue](https://github.com/youzan/vant/issues)，并且没有发现同样的问题。
+        - 确认你搜索过[历史 issue](https://github.com/youzan/vant/issues)，并且没有发现同样的问题。
         - 如果不是反馈 Bug，请到 [Discussions 讨论区](https://github.com/youzan/vant/discussions) 发帖。
 
   - type: input
     id: reproduce
     attributes:
       label: 重现链接
-      description: 请提供一个尽可能简单的 [codesandbox](https://codesandbox.io/s/m5v3f) 或 GitHub 仓库链接。请不要乱填一个链接，这会导致你的 issue 被直接关闭。
+      description: 请提供一个尽可能简单的 [codesandbox](https://codesandbox.io/s/m5v3f) 或 GitHub 仓库链接。不要填写无效的链接，这会导致你的 issue 被直接关闭。
     validations:
       required: true
 
@@ -24,15 +24,15 @@ body:
     id: version
     attributes:
       label: vant 版本
-      description: 你正在使用的 vant 版本是多少？（注意：不是 package.json 里的版本，而是 node_modules/vant 里实际安装的版本）
-      placeholder: 如 3.2.0
+      description: 你正在使用的 vant 版本是多少？（请填写 node_modules/vant/package.json 里实际安装的版本）
+      placeholder: 比如 3.2.0
     validations:
       required: true
 
   - type: textarea
     id: description
     attributes:
-      label: 请描述一下你遇到的问题
+      label: 描述一下你遇到的问题。
       placeholder: 比如：弹窗无法展示、日历组件报错
     validations:
       required: true
