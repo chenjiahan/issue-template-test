@@ -23,8 +23,8 @@ body:
   - type: input
     id: version
     attributes:
-      label: vant 版本
-      description: 你正在使用的 vant 版本是多少？（请填写 node_modules/vant/package.json 里实际安装的版本）
+      label: Vant 版本
+      description: 你正在使用的 Vant 版本是多少？（请填写 node_modules/vant/package.json 里实际安装的版本）
       placeholder: 比如 3.2.0
     validations:
       required: true
