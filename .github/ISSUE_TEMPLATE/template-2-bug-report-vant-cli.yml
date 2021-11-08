@@ -1,7 +1,7 @@
-name: 我要反馈一个 Bug
+name: 我要反馈 Vant Cli 的 Bug
 description: 通过标准模板进行 Bug 反馈。
-title: "[Bug Report] "
-labels: ["bug"]
+title: "[Bug Report] 在此填写标题"
+labels: ["bug", "cli"]
 body:
   - type: markdown
     attributes:
@@ -9,7 +9,7 @@ body:
         在提交 Bug 报告前，请注意：
 
         - 确认你的问题无法通过官方文档得到解决。
-        - 确认你搜索过[历史 issue](https://github.com/youzan/vant/issues)，并且没有发现同样的问题。
+        - 确认你搜索过 [历史 issue](https://github.com/youzan/vant/issues)，并且没有发现同样的问题。
         - 如果不是反馈 Bug，请到 [Discussions 讨论区](https://github.com/youzan/vant/discussions) 发帖。
 
   - type: input
@@ -23,8 +23,8 @@ body:
   - type: input
     id: version
     attributes:
-      label: vant 版本
-      description: 你正在使用的 vant 版本是多少？（请填写 node_modules/vant/package.json 里实际安装的版本）
+      label: Vant Cli 版本
+      description: 你正在使用的 Vant Cli 版本是多少？（请填写 node_modules/@vant/cli/package.json 里实际安装的版本）
       placeholder: 比如 3.2.0
     validations:
       required: true
@@ -33,7 +33,7 @@ body:
     id: description
     attributes:
       label: 描述一下你遇到的问题。
-      placeholder: 比如：弹窗无法展示、日历组件报错
+      placeholder: 比如：组件构建失败
     validations:
       required: true
 
@@ -44,13 +44,8 @@ body:
       description: 请提供一个最简单的操作步骤，方便我们快速重现问题。
       placeholder: |
         比如：
-        1. 点击按钮
-        2. 弹窗无法展示
+        1. 克隆仓库
+        2. 运行 yarn build
+        3. 组件构建失败
     validations:
       required: true
-
-  - type: input
-    id: browsers
-    attributes:
-      label: 设备/浏览器
-      description: 在哪些设备/浏览器上能重现这个问题？
