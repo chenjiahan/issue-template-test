@@ -18,6 +18,11 @@ body:
     attributes:
       label: System Info
       description: Output of `npx envinfo --system --npmPackages '@rspack/*' --binaries --browsers`
+      placeholder: |
+        System:
+        Binaries:
+        Browsers:
+        npmPackages:
     validations:
       required: true
 
