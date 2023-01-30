@@ -1,15 +1,15 @@
 name: "🐞 Bug Report"
-description: Report a Bug to Rspack
-title: "[Bug]: "
+description: Report a bug to Rspack
+title: "[Bug Report]: "
 labels: ["C-bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to report this issue! Before submitting, please note:
+        Thank you for taking the time to report this issue! Before submitting, please note:
 
          - Confirm that your problem cannot be solved by official documentation.
-         - Make sure you searched in the [Issues](https://github.com/modern-js-dev/rspack/issues) and didn't find the same issue.
+         - Make sure you've searched in the [Issues](https://github.com/modern-js-dev/rspack/issues) and haven't found the same issue.
          - If it's not bug report, please post on the [Discussions](https://github.com/modern-js-dev/rspack/discussions).
 
   - type: input
@@ -25,7 +25,7 @@ body:
     id: details
     attributes:
       label: Details
-      description: Please describe the Bug, it would be better to provide a screenshot.
+      description: Please describe the bug, it would be better to provide some screenshots.
     validations:
       required: true
 
@@ -33,7 +33,7 @@ body:
     id: reproduce
     attributes:
       label: Reproduce link
-      description: "Please provide a simplest reproduction of the problem (minimal demo without redundant dependencies). You can create it on [CodeSandbox](https://codesandbox.io/), or provide the URL of the project:"
+      description: "Please provide a simple reproduction of the problem (minimal demo without redundant dependencies). You can create it on [CodeSandbox](https://codesandbox.io/), or provide the URL of the project:"
       placeholder: paste link here
 
   - type: textarea
@@ -43,7 +43,7 @@ body:
       description: Please provide the simplest steps so that we can quickly reproduce the problem.
       placeholder: |
         For example:
-        1. execute `yarn dev`
-        2. find `xxx` error message in the console
+        1. run `yarn dev`
+        2. `xxx` error occurred
     validations:
       required: true
