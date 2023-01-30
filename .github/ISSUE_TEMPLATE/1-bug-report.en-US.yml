@@ -12,12 +12,12 @@ body:
          - Make sure you've searched in the [Issues](https://github.com/modern-js-dev/rspack/issues) and haven't found the same issue.
          - If it's not bug report, please post on the [Discussions](https://github.com/modern-js-dev/rspack/discussions).
 
-  - type: input
-    id: versions
+
+  - type: textarea
+    id: system-info
     attributes:
-      label: Rspack Version
-      description: Run `npm ls @rspack/core` or `pnpm ls @rspack/core --depth Infinity`.
-      placeholder: "@rspack/core@1.0.0"
+      label: System Info
+      description: Output of `npx envinfo --system --npmPackages '@rspack/*' --binaries --browsers`
     validations:
       required: true
 
