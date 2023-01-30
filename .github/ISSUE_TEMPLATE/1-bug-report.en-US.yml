@@ -15,7 +15,7 @@ body:
   - type: input
     id: versions
     attributes:
-      label: Version
+      label: Rspack Version
       description: Run `npm ls @rspack/core` or `pnpm ls @rspack/core --depth Infinity`.
       placeholder: "@rspack/core@1.0.0"
     validations:
@@ -25,7 +25,7 @@ body:
     id: details
     attributes:
       label: Details
-      description: Please describe the Bug, including screenshots, etc.
+      description: Please describe the Bug, it would be better to provide a screenshot.
     validations:
       required: true
 
@@ -35,8 +35,6 @@ body:
       label: Reproduce link
       description: "Please provide a simplest reproduction of the problem (minimal demo without redundant dependencies). You can create it on [CodeSandbox](https://codesandbox.io/), or provide the URL of the project:"
       placeholder: paste link here
-    validations:
-      required: true
 
   - type: textarea
     id: reproduce-steps
